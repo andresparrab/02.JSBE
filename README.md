@@ -1,2 +1,2 @@
-# JSBE
-Javascript backend course getting distracted
+## JSBE
+Trying to make a portfolion using Lvim only
