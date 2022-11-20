@@ -1,6 +1,21 @@
-.Nav-container{
-border-radius: 50px;
-background: linear-gradient(145deg, #cacaca, #f0f0f0);
-box-shadow:  20px 20px 60px #bebebe,
+ .Nav-container{
+  display: flex;
+   align-items: center;
+  padding-left: 30px;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow:  20px 20px 60px #bebebe,
              -20px -20px 60px #ffffff;
+}
+
+
+.code {
+  color: black;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.logo-name{
+font-size: 35px;
+  width: 110px;
 }
