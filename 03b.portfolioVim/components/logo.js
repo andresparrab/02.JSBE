@@ -1,4 +1,5 @@
-import { Link } from "@chakra-ui/react";
+import { Text, Link, useColorModeValue } from "@chakra-ui/react";
+import Image from 'next/image'
 import styled from "@emotion/styled";
 
 const LogoBox = styled.span`
@@ -7,17 +8,26 @@ const LogoBox = styled.span`
     display: inline-flex;
     align-items: center;
     height: 30px;
+    line-height: 20px;
+    padding: 10px;
+    > svg {
+      transition: 200ms ease;
+    }
+    &:hover > svg {
+      transform: rotate(30deg);
+    }
 `
 const Logo = () => {
+  const footPrintImg = `/home/vostro/Git/02.JSBE/03b.portfolioVim/images/footprint.png`
   return (
-    <Link>
+    < Link href="/">
       <a>
         <LogoBox>
-          <FootprintIcon />
+          <Image src="/home/vostro/Git/02.JSBE/03b.portfolioVim/images/footprint.png" width={20} height={20} alt="logo" />
           <Text>Andres Parra</Text>
         </LogoBox>
       </a>
-    </Link>
+    </Link >
   )
 }
 
@@ -27,14 +37,6 @@ export default Logo
 // import FootprintIcon from './icons/footprint'
 // import styled from '@emotion/styled'
 
-// const LogoBox = styled.span`
-//   font-weight: bold;
-//   font-size: 18px;
-//   display: inline-flex;
-//   align-items: center;
-//   height: 30px;
-//   line-height: 20px;
-//   padding: 10px;
 //   > svg {
 //     transition: 200ms ease;
 //   }

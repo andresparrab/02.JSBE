@@ -1,6 +1,7 @@
 import { Box, Container } from '@chakra-ui/react'
 import Head from 'next/head'
-import Navbar from './navbar'
+import Navbar from '../navbar'
+
 const Main = ({ children, router }) => {
   return (
     <Box as='Main' pb={8}>
