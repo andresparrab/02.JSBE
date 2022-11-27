@@ -1,8 +1,6 @@
-import { Text, Link, useColorModeValue } from "@chakra-ui/react";
-import Image from 'next/image'
-import styled from "@emotion/styled";
-
-const LogoBox = styled.span`
+import { Text, Link, Img, useColorModeValue } from "@chakra-ui/react";
+import Styled from "@emotion/styled";
+const LogoBox = Styled.span`
     font-weight: bold;
     font-size: 18px;
     display: inline-flex;
@@ -18,15 +16,18 @@ const LogoBox = styled.span`
     }
 `
 const Logo = () => {
-  const footPrintImg = `/home/vostro/Git/02.JSBE/03b.portfolioVim/images/footprint.png`
+  const FootPrintImg = `/images/footprint${useColorModeValue('', '-dark')}.svg`
   return (
-    < Link href="/">
-      <a>
-        <LogoBox>
-          <Image src="/home/vostro/Git/02.JSBE/03b.portfolioVim/images/footprint.png" width={20} height={20} alt="logo" />
-          <Text>Andres Parra</Text>
+    < Link>
+        <LogoBox href="/">
+          <Img src={FootPrintImg} width={20} height={20} alt='logo icon' />
+          <Text 
+          color={useColorModeValue('grey.800', 'whiteAlpha.90')}
+          fontFamily='M Plus Rounded 1c'
+          fontWeight='bold'
+          ml={3}
+        >Andres Parra</Text>
         </LogoBox>
-      </a>
     </Link >
   )
 }
