@@ -18,6 +18,7 @@ class App extends Component {
             return { monsters: users }
           },
           () => {
+            // this is a comment
             console.log(this.state)
           }))
   }
