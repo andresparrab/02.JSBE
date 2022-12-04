@@ -31,7 +31,7 @@ class App extends Component {
     const searchField = event.target.value.toLocaleLowerCase();
     this.setState(() => {
       // if the variable above searchField has the same name as the state variable below
-      // then it will use it as a key to alter the state
+      // then it will use it as a key to alter the state.
       return { searchField };
     });
   };
