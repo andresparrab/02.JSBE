@@ -1,6 +1,6 @@
 import "./App.css";
 import { Component } from "react";
-import CardList from "./components/card-list-component";
+import CardList from "./components/card-list/card-list-component";
 class App extends Component {
   constructor() {
     super();
@@ -36,6 +36,7 @@ class App extends Component {
     const filteredMonters = monsters.filter((monster) => {
       return monster.name.toLocaleLowerCase().includes(searchField);
     });
+
     return (
       <div className="App">
         <input
